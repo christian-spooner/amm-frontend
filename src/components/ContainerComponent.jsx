@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import "../styles.css";
 import SwapComponent from "./SwapComponent";
-import ProvideComponent from "./ProvideComponent";
+import PoolComponent from "./PoolComponent";
 import WithdrawComponent from "./WithdrawComponent";
 import FaucetComponent from "./FaucetComponent";
 import { PRECISION } from "../constants";
@@ -53,11 +53,11 @@ export default function ContainerComponent(props) {
                     </div>
                     <div
                         className={
-                            "tabStyle " + (activeTab === "Provide" ? "activeTab" : "")
+                            "tabStyle " + (activeTab === "Pool" ? "activeTab" : "")
                         }
-                        onClick={() => changeTab("Provide")}
+                        onClick={() => changeTab("Pool")}
                     >
-                        Provide
+                        Pool
                     </div>
                     <div
                         className={
@@ -83,8 +83,8 @@ export default function ContainerComponent(props) {
                         getHoldings={() => getHoldings()}
                     />
                 )}
-                {activeTab === "Provide" && (
-                    <ProvideComponent
+                {activeTab === "Pool" && (
+                    <PoolComponent
                         contract={props.contract}
                         getHoldings={() => getHoldings()}
                     />

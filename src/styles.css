@@ -1,3 +1,8 @@
+:root {
+    --white: #fff; 
+    --black: #000;
+}
+
 body {
     margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -17,7 +22,7 @@ body,
 .pageBody,
 #root {
     height: 100%;
-    background: linear-gradient(180deg, #0094D9 0%, #000 180%);
+    background-image: url("../public/fruits.jpeg");
 }
 
 .tabBody {
@@ -27,7 +32,7 @@ body,
     justify-content: center;
     align-items: center;
     border-radius: 0px 0px 19px 19px;
-    background-color: #0e0e10;
+    background-color: var(--white);
     border-top: 0px;
     margin-right: 0px;
 }
@@ -50,15 +55,15 @@ body,
     border-radius: 19px;
     position: relative;
     overflow: hidden;
-    border: 1px solid grey;
+    border: 1px solid var(--black);
 }
 .leftHeader {
     font-size: 14px;
 }
 
 .getMax {
-    background-color: #242525;
-    border: 1px solid white;
+    background-color: var(--white);
+    border: 1px solid var(--white);
     border-radius: 19px;
     height: 30px;
     width: 50px;
@@ -69,7 +74,7 @@ body,
 }
 
 .getMax:hover {
-    background-color: #b4b4b4;
+    background-color: rgba(0, 0, 0, 0.1);
     border: 2px;
 }
 
@@ -83,13 +88,13 @@ body,
     border-radius: 19px;
     position: relative;
     overflow: hidden;
-    border: 2px solid grey;
+    border: 2px solid var(--white);
 }
 .boxStyle2 {
     display: flex;
     flex-direction: column;
     overflow: hidden;
-    border: 1px solid grey;
+    border: 1px solid var(--white);
 }
 .selectTab {
     width: 460px;
@@ -99,7 +104,7 @@ body,
     margin: 0px auto;
     margin-top: 10px;
     margin-right: 0px;
-    background-color: #0e0e10;
+    background-color: var(--white);
     border-radius: 19px 19px 0px 0px;
     padding: 0px 20px 0px 20px;
 }
@@ -113,9 +118,9 @@ body,
 }
 
 .btn {
-    background-color: #242525;
+    background-color: var(--white);
     margin: 10px 30px;
-    color: white;
+    color: var(--black);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -130,8 +135,8 @@ body,
     width: 70%;
     height: 30px;
     font-size: 22px;
-    background-color: #0e0e10;
-    color: white;
+    background-color: var(--white);
+    color: var(--black);
     border: 0px;
 }
 .textField:focus-visible {
@@ -141,7 +146,7 @@ body,
 .boxBody {
     display: flex;
     justify-content: space-between;
-    color: white;
+    color: var(--black);
 }
 .rightContent {
     display: flex;
@@ -159,7 +164,7 @@ body,
     width: 80px;
     padding: 5px;
     font: 18px;
-    color: white;
+    color: var(--black);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -170,19 +175,19 @@ body,
 }
 
 .tabStyle:hover {
-    background: rgba(255, 255, 255, 0.05);
+    background: rgba(0, 0, 0, 0.1);
 }
 
 .activeTab {
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(0, 0, 0, 0.1);
 }
 
 .swapIcon {
-    width: 5%;
+    width: 10%;
     text-align: center;
     display: flex;
     margin: 40px auto;
-    color: #ff726e;
+    color: var(--black);
 }
 
 svg {
@@ -194,34 +199,34 @@ svg {
     position: absolute;
     right: 50px;
     top: 20px;
-    background-color: #ff726e;
-    color: #0e0e10;
+    background-color: var(--white);
+    color: var(--black);
     height: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 5px 10px 5px 10px;
-    border: 1px solid #c8332e;
+    border: 1px solid var(--black);
     border-radius: 15px;
 }
 
 .connectBtn:hover {
-    color: white;
-    border: 2px solid #c8332e;
+    color: var(--black);
+    border: 3px solid #0cd62d;
 }
 
 .connected {
     position: absolute;
-    right: 50px;
+    right: 20px;
     top: 20px;
-    background-color: #4caf50;
-    color: white;
+    background-color: #0cd62d;
+    color: var(--black);
     height: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 5px 10px 5px 10px;
-    border: 1px solid #2a722c;
+    border: 1px solid var(--white);
     border-radius: 15px;
 }
 
@@ -239,11 +244,11 @@ svg {
     height: 30px;
     width: 75%;
     margin: 10px auto;
-    color: white;
+    color: var(--black);
 }
 
 .detailsBody {
-    background-color: #0e0e10;
+    background-color: var(--white);
     width: 90%;
     padding: 10px;
     border-radius: 19px;
@@ -256,7 +261,7 @@ svg {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
+    color: var(--black);
     margin-bottom: 15px;
 }
 
@@ -270,7 +275,7 @@ svg {
 .detailsAttribute {
     font: 18px;
     font-weight: 600;
-    color: white;
+    color: var(--black);
     display: flex;
     justify-content: flex-start;
     width: 50%;
@@ -279,7 +284,7 @@ svg {
 .detailsValue {
     font: 18px;
     font-weight: 900;
-    color: white;
+    color: var(--black);
     display: flex;
     justify-content: center;
     width: 50%;
@@ -293,11 +298,11 @@ svg {
 
 .navBar {
     height: 80px;
-    background-color: #0e0e10;
+    background-color: var(--white);
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
+    color: var(--black);
     padding: 0px 30px;
 }
 
@@ -307,7 +312,7 @@ svg {
 }
 
 .error {
-    color: white;
+    color: var(--black);
     display: flex;
     justify-content: flex-start;
     padding: 0px 20px;
