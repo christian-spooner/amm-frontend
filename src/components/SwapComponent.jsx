@@ -116,7 +116,7 @@ export default function SwapComponent(props) {
             />
             <div className="bottomDiv">
                 <div className="btn" onClick={() => onSwap()}>
-                    Swap
+                    <b>Swap</b>
                 </div>
             </div>
         </div>

@@ -58,7 +58,7 @@ export default function FaucetComponent(props) {
             />
             <div className="bottomDiv">
                 <div className="btn" onClick={() => onClickFund()}>
-                    Fund
+                    <b>Fund</b>
                 </div>
             </div>
         </div>

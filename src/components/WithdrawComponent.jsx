@@ -67,7 +67,7 @@ export default function WithdrawComponent(props) {
     return (
         <div className="tabBody">
             <BoxTemplate
-                leftHeader={"Amount:"}
+                leftHeader={"Amount"}
                 right={
                     <div onClick={() => getMaxShare()} className="getMax">
                         Max
@@ -84,7 +84,7 @@ export default function WithdrawComponent(props) {
             )}
             <div className="bottomDiv">
                 <div className="btn" onClick={() => withdrawShare()}>
-                    Withdraw
+                    <b>Withdraw</b>
                 </div>
             </div>
         </div>

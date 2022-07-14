@@ -105,7 +105,7 @@ export default function ContainerComponent(props) {
             </div>
             <div className="details">
                 <div className="detailsBody">
-                    <div className="detailsHeader">Details</div>
+                    <div className="detailsHeader">Your Details</div>
                     <div className="detailsRow">
                         <div className="detailsAttribute">Amount of Apples:</div>
                         <div className="detailsValue">{amountOfApples}</div>
