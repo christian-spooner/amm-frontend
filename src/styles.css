@@ -1,5 +1,5 @@
 :root {
-    --white: #fff; 
+    --white: rgba(255, 255, 255, 0.85); 
     --black: #000;
 }
 
@@ -45,6 +45,12 @@ body,
     align-items: center;
     border-radius: 19px;
 }
+
+
+.btn:hover{
+    background: rgba(0, 0, 0, 0.1);
+}
+
 .boxStyle {
     width: 70%;
     height: auto;
@@ -61,8 +67,12 @@ body,
     font-size: 14px;
 }
 
+.swapIcon {
+    cursor: pointer;
+}
+
 .getMax {
-    background-color: var(--white);
+    background-color: rgba(255, 255, 255, 0);
     border: 1px solid var(--white);
     border-radius: 19px;
     height: 30px;
@@ -88,7 +98,7 @@ body,
     border-radius: 19px;
     position: relative;
     overflow: hidden;
-    border: 2px solid var(--white);
+    border: 1px solid var(--black);
 }
 .boxStyle2 {
     display: flex;
@@ -118,7 +128,7 @@ body,
 }
 
 .btn {
-    background-color: var(--white);
+    background-color: rgba(255, 255, 255, 0);
     margin: 10px 30px;
     color: var(--black);
     display: flex;
@@ -135,7 +145,7 @@ body,
     width: 70%;
     height: 30px;
     font-size: 22px;
-    background-color: var(--white);
+    background-color: rgba(255, 255, 255, 0);
     color: var(--black);
     border: 0px;
 }
@@ -199,7 +209,7 @@ svg {
     position: absolute;
     right: 50px;
     top: 20px;
-    background-color: var(--white);
+    background-color: rgba(255, 255, 255, 0);
     color: var(--black);
     height: 30px;
     display: flex;
@@ -294,6 +304,7 @@ svg {
     display: flex;
     justify-content: center;
     height: 100%;
+    margin: 10px;
 }
 
 .navBar {
