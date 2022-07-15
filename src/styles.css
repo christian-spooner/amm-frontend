@@ -126,8 +126,8 @@ body,
 }
 
 .btn {
-    background-color: rgba(232, 0, 111, 0.85);
-    color: var(--white);
+    background-color: rgba(217, 232, 0, 0.5);
+    color: var(--black);
     margin: 10px 30px;
     display: flex;
     justify-content: center;
@@ -140,10 +140,10 @@ body,
 }
 
 .textField {
-    width: 70%;
+    width: 120%;
     height: 30px;
-    font-size: 18px;
-    background-color: rgba(255, 255, 255, 0);
+    font-size: 22px;
+    background-color: rgba(0, 0, 0, 0);
     color: var(--black);
     border: 0px;
 }
