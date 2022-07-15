@@ -1,10 +1,6 @@
 {
   "name": "amm-frontend",
   "version": "0.1.0",
-  "engines": {
-    "node": "16.13.1",
-    "npm": "8.1.2"
-  },
   "private": false,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
