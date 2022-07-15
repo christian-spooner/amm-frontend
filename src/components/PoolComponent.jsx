@@ -91,7 +91,7 @@ export default function PoolComponent(props) {
             <div className="error">{error}</div>
             <div className="bottomDiv">
                 <div className="btn" onClick={() => provide()}>
-                    <b>Provide</b>
+                    Provide
                 </div>
             </div>
         </div>

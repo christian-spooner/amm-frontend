@@ -105,7 +105,7 @@ export default function ContainerComponent(props) {
             </div>
             <div className="details">
                 <div className="detailsBody">
-                    <div className="detailsHeader">Your Details</div>
+                    <div className="detailsHeader">Your Wallet</div>
                     <div className="detailsRow">
                         <div className="detailsAttribute">Amount of Apples:</div>
                         <div className="detailsValue">{amountOfApples}</div>
@@ -115,10 +115,10 @@ export default function ContainerComponent(props) {
                         <div className="detailsValue">{amountOfOranges}</div>
                     </div>
                     <div className="detailsRow">
-                        <div className="detailsAttribute">Your Share:</div>
+                        <div className="detailsAttribute">Shares:</div>
                         <div className="detailsValue">{amountOfShare}</div>
                     </div>
-                    <div className="detailsHeader">Pool Details</div>
+                    <div className="detailsHeader">Pool</div>
                     <div className="detailsRow">
                         <div className="detailsAttribute">Total Apples:</div>
                         <div className="detailsValue">{totalApples}</div>

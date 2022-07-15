@@ -84,7 +84,7 @@ export default function WithdrawComponent(props) {
             )}
             <div className="bottomDiv">
                 <div className="btn" onClick={() => withdrawShare()}>
-                    <b>Withdraw</b>
+                    Withdraw
                 </div>
             </div>
         </div>
